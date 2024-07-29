@@ -3,24 +3,23 @@ k=15 #размер
 t.left(90)
 t.speed(100)
 t.tracer(0,0)
+t.pensize(2)
 
-t.right(60)
-t.forward(4*k)
-t.right(120)
-for i in range(4):
-    t.forward(3*k)
-    t.right(240)
-    t.forward(3*k)
-    t.right(120)
-t.forward(4*k)
-t.right(90)
-t.forward(8*3**0.5*k)
-t.right(90)
-t.forward(8*k)
-t.up()
+for n in range(5, 6):
+    t.forward((n+2)*k)
+    for i in range(4):
+        t.forward(n*k)
+        t.right(90)
+        t.forward((n+2)*k)
+    t.right(90)
+    t.forward(2*n*k)
+    for i in range(4):
+        t.right(90)
+        t.forward((3*n-1)*k)
 
 for x in range(-30, 30):
     for y in range(-30, 30):
+        t.up()
         t.goto(x*k, y*k)
         t.dot(5)
 t.done()
