@@ -1,8 +1,8 @@
 def F(x, y):
-    if x > y or x == 81:
+    if x > y or x==13:
         return 0
     if x == y:
         return 1
     else:
-        return F(x+x//10, y) + F(x+3, y) + F(2*x-1, y)
-print(F(42,73)*F(73,89))
+        return F(x+1, y) + F(x+2, y) + F(x*3, y)
+print(F(3,8)*F(8,18))

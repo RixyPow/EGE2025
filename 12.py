@@ -1,14 +1,8 @@
-for n in range(4,10001):
-    s="5" + n*"2"
-    while "52" in s or "2222" in s or "1112" in s:
-        if "52" in s:
-            s=s.replace("52","11",1)
-            s=s.replace("2222","5",1)
-        else:
-            s=s.replace("1112","2",1)
-    summa=sum([int(a) for a in s])
-    k=[]
-    if summa == 1685:
-        k.append(n)
-        print(max(k))
-        break
+import math
+k=[]
+for n in range(1, 100):
+    for m in range(1, 100):
+        a=3*n+4*m
+        if (m+2*n)>40 and (math.factorial(a-1)+1)%a==0:
+            k.append(m+2*n)
+print(min(k))
