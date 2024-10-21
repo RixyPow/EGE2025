@@ -1,7 +1,7 @@
-for a in range(2):
-    for b in range(2):
-        for c in range(2):
-            for d in range(2):
-                F = ((not a) and (not b)) or (b==c) or d
+for x in range(2):
+    for y in range(2):
+        for w in range(2):
+            for z in range(2):
+                F = ((x<=y)<=z) or (not w)
                 if not F:
-                    print(a, b, c, d)
+                    print(x, y, w, z)

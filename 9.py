@@ -1,4 +1,4 @@
-with open('9.4.txt') as f:
+with open('9_58322.txt') as f:
     k=0
     for s in f:
         a=sorted(int(x) for x in s.split())

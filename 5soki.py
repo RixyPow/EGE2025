@@ -1,8 +1,7 @@
-for i in range(7, 1000):
-    n=bin(i)[2:]
-    if i%3==0:
-        n=n+n[-3]+n[-2]+n[-1]
-    else:
-        n=n+bin(3*(int(n, 2)%3))[2:]
-    if int(n, 2)<100:
+for i in range(7, 100):
+    n=str(bin(i)[2:])
+    perevorot=''
+    for j in n:
+        perevorot=j+perevorot
+    if int(perevorot, 2) == 13:
         print(i)

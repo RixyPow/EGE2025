@@ -1,11 +1,14 @@
-for n in range(3,1000):
-        s='3'+n*'5'
-        while '25' in s or '355' in s or '555' in s:
-                s=s.replace('25', '3', 1)
-                s=s.replace('355', '52', 1)
-                s=s.replace('555', '23', 1)
-        k=0
-        for i in s:
-                k+=int(i)
-        if k==27:
-                print(n)
+k=[]
+h=[]
+for n in range(100,10000):
+        if n%9==0:
+                s=n*'5'
+                while '555' in s or '11' in s or '2' in s:
+                        s=s.replace('555', '1', 1)
+                        s=s.replace('11', '25', 1)
+                        s=s.replace('2', '5', 1)
+                k.append(n)
+                h.append(int(s))
+
+print(k)
+print(h)
