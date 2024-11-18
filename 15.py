@@ -5,11 +5,10 @@ def Del(n, m):
         return False
 
 
-for A in range(1, 151):
+for A in range(1, 101):
     k=0
-    for x in range(1, 151):
-        for y in range(1, 151):
-            if (Del(108, x) <= (not (Del(x, y)))) or (x + y > 80) or (A - y > x):
-                k += 1
-    if k==     22500:
-        print(A,k)
+    for x in range(1, 101):
+        if ((not(Del(x, A))) <= (Del(x, 6) <= (not(Del(x, 9)))))==True:
+            k+=1
+    if k==10000:
+        print(A)

@@ -1,8 +1,7 @@
 from ipaddress import *
 k=[]
 for mask in range(33):
-    net1=ip_network(f'202.3.20.24/{mask}', 0)
-    net2 = ip_network(f'202.3.27.11/{mask}', 0)
-    if ((net1.network_address==net2.network_address) and (f'{ip:b}'.count('1')%2==0 for ip in net1)):
-        k.append(mask)
+    net1=ip_network(f'119.83.200.27/{mask}', 0)
+    if net1==ip_address('119.83.192.0'):
+        k.append(net1)
 print(k)

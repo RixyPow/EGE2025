@@ -1,14 +1,14 @@
 from turtle import *
-k=35
-tracer(0, 0)
+k=30
+tracer(0)
 pensize(5)
 left(90)
-speed(100)
-for i in range(4):
-    forward(8*k)
-    right(90)
-    forward(8 * k)
-    right(90)
+right(45)
+for i in range(7):
+    forward(5*k)
+    right(45)
+    forward(10*k)
+    right(135)
 up()
 for x in range(-30, 30):
     for y in range(-30, 30):

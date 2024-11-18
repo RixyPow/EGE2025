@@ -1,5 +1,8 @@
-for ss in range(10,500):
-    for x in range(ss):
-        for y in range(ss):
-            if (2*ss**3 + 4*ss**2 + x*ss + 9 + y*ss**3 + x*ss**2 + y*ss + 3) == (x*ss**3 + 4*ss*2 + y*ss):
-                print(x*ss**2+y*ss+y)
+for p in range(10,60):
+    for x in range(p+1):
+        for y in range(p+1):
+            a=2*p**3 + 4*p**2 + x*p + 9
+            b=y*p**3 + x*p**2 + y*p + 3
+            c=x*p**3 + 4*p**2 + y*p
+            if a+b==c:
+                print(x*p**2+y*p+y)
