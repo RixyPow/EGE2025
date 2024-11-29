@@ -1,7 +1,8 @@
-s=99*'8'+'1'
-while '133' in s or '881' in s:
-    if '133' in s:
-        s=s.replace('133', '81', 1)
+s=127*'9'
+while '333' in s or '999' in s:
+    if '333' in s:
+        s=s.replace('333', '9',1)
     else:
-        s=s.replace('881', '13', 1)
+        s=s.replace('999', '3', 1)
+
 print(s)
