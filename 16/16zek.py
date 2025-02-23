@@ -1,6 +1,6 @@
 def F(n):
-    if n == 1:
-        return 1
-    elif n>1:
-        return F(n-1)+2**(n-1)
-print(F(12))
+    if n <= 2:
+        return n
+    elif n>2:
+        return 3*F(n-1) - F(n-2)
+print(F(6))

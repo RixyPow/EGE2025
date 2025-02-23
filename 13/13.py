@@ -1,5 +1,8 @@
 from ipaddress import *
-for mask in range(33):
-    net1=ip_network(f'213.168.83.190/{mask}', 0)
-    if net1.network_address==ip_address('213.168.64.0'):
-        print(mask)
+k=0
+net=ip_network(f'61.58.73.42/255.255.252.0', 0)
+for ip in net:
+    bip=f'{ip:b}'
+    if bip.count('1')%2!=0:
+        k+=1
+print(k)

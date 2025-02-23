@@ -5,4 +5,4 @@ def F(n):
         return 1
     else:
         return F(n-2) * n
-print(F(7))
+print(F(6))

@@ -1,9 +1,8 @@
-for i in range(10000,100000):
-    t1 = int(str(i)[0]) + int(str(i)[2]) + int(str(i)[4])
-    t2 = int(str(i)[1]) + int(str(i)[3])
-    if t1 > t2:
-        t3 = str(t2) + str(t1)
-    else:
-        t3 = str(t1) + str(t2)
-    if t3 == '723':
-        print(i)
+k=0
+for i in range(30000000, 50000000):
+    b=bin(i)[2:]
+    b=b+2*str(bin(i%3)[2:])
+    b=b+(bin(int(b, 2)%5)[2:])*3
+    if int(b,2) in range(1222222222, 1555555667):
+        k+=1
+print(k)

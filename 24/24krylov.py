@@ -1,11 +1,12 @@
-with open('../24var18-20.txt') as f:
-    s=f.readline()
-    k=1
+with open('24hdz.txt') as f:
+    s=f.readline().replace('DE', '*')
+    k=0
     mx=0
-    for i in range(len(s)-1):
-        if s[i]==s[i+1]:
-            k+=1
-            mx=max(mx, k)
+    for r in range(len(s)):
+        k+=s[r]=='*'
+        while k<=240:
+            
+
         else:
             k=1
     print(mx)

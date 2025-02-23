@@ -1,5 +1,5 @@
 def F(x, y):
-    if x > y or x ==5 or x ==10:
+    if x > y or x ==5 or x ==5:
         return 0
     if x == y:
         return 1

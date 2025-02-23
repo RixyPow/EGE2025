@@ -1,4 +1,4 @@
 from fnmatch import *
-for x in range(2025, 10**8+1, 2025):
-    if fnmatch(str(x), '12*34?5'):
-        print(x, x//2025)
+for x in range(2622, 10**8+1, 2622):
+    if fnmatch(str(x), '1?4*6?8'):
+        print(x, x//2622)

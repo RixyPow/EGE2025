@@ -1,7 +1,7 @@
-s=65*'9'
-while '999' in s or '222' in s:
-    if '222' in s:
-        s=s.replace('222', '9', 1)
+s=85*'7'
+while '333' in s or '777' in s:
+    if '333' in s:
+        s=s.replace('333', '7', 1)
     else:
-        s=s.replace('999', '2', 1)
+        s=s.replace('777', '3', 1)
 print(s)

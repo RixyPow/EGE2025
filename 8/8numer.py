@@ -1,6 +1,6 @@
 from itertools import product
 h=[]
-for i in product('НРТУ', repeat=4):
+for i in product('БКФ', repeat=6):
     s=''.join(i)
     h.append(s)
-print(h[214])
+print(h[341])

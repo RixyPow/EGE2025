@@ -1,12 +1,10 @@
+import sys
+sys.setrecursionlimit(3000)
 def F(n):
     if n == 0:
         return 0
     if n>0 and n%2==0:
-        return F(n//2)
+        return n+F(n-1)
     if n%2==1:
-        return 1+F(n-1)
-k=0
-for i in range(1,1001):
-    if F(i)==3:
-        k+=1
-print(k)
+        return 2*F(n-2)
+print(F(26))
