@@ -1,19 +1,6 @@
-from turtle import *
-k=25
-pensize(5)
-tracer(0)
-left(90)
-a=6 #
-for i in range(4):
-    forward(a*k)
-    right(90)
-    forward(a*k)
-    left(90)
-    forward(a*k)
-    right(90)
-up()
-for x in range(-30, 30):
-    for y in range(-30, 30):
-        setpos(x*k, y*k)
-        dot(10)
-done()
+with open('17.1may.txt') as f:
+    s=[int(x) for x in f]
+    chet=[y for y in s if y%2==0]
+    h=sum(chet)/len(chet)
+    for i in range(len(s)-1):
+        if (s[i]%3==0 or s[i+1]%3==0) and (s[i]<)
