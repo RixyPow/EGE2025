@@ -1,4 +1,7 @@
-from fnmatch import *
-for i in range(8161, 10**10, 8161):
-    if fnmatch(str(i), '716??3*41'):
-        print(i, i//8161)
+from re import *
+with open('24re.txt') as f:
+    s=f.readline()
+    num=r'([1-6]+)'
+    reg=rf'B{num}([-*]{num})+'
+    a=max([x.group() for x in finditer(reg, s)], key=len)
+    print(len(a), a)
